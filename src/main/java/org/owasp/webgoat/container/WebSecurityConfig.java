@@ -99,7 +99,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     return super.authenticationManager();
   }
 
-  @Override
   @Bean
   public PasswordEncoder passwordEncoder() {
     return new BCryptPasswordEncoder();
